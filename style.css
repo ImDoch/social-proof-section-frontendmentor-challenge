@@ -60,9 +60,7 @@ header p {
 }
 /* estilos de las tarjetas de la seccion rated*/
 .rated-container__card {
-    min-width: 250px;
-    max-width: 350px;
-    width: 100%;
+    min-width: 288px;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -78,6 +76,7 @@ header p {
 .comments-container {
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 50px;
     display: grid;
     justify-content: center;
     gap: 20px;
@@ -146,6 +145,7 @@ header p {
         grid-area: comments;
         grid-template-columns: repeat(3, 1fr);
         height: 250px;
+        padding: 0;
     }
     .comments-container__card {
         height: 200px;
