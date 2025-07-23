@@ -35,7 +35,7 @@ main {
 /* estilos del header */
 header {
     min-width: 288px;
-    max-width: 320px;
+    max-width: 350px;
     min-height: 250px;
     padding: 50px 10px 10px;
     display: flex;
@@ -130,6 +130,8 @@ header p {
     header {
         grid-area: header;
         text-align: left;
+        padding: 0;
+        justify-self: start;
     }
     .rated-container {
         grid-area: rated;
