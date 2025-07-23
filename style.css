@@ -88,7 +88,6 @@ header p {
 /* estilos de las tarjetas de la seccion comments */
 .comments-container__card {
     width: 300px;
-    height: 200px;
     padding: 25px;
     text-align: left;
     border-radius: 10px;
@@ -125,7 +124,7 @@ header p {
 
 @media (min-width: 1024px) {
     .main-grid-container {
-        height: 100vh;
+        min-height: 100vh;
         place-content: center;
         grid-template-areas: 
         "header rated"
@@ -149,6 +148,9 @@ header p {
         grid-area: comments;
         grid-template-columns: repeat(3, 1fr);
         height: 250px;
+    }
+    .comments-container__card {
+        height: 200px;
     }
     .comments-container article:nth-child(2) {
         align-self: center;
