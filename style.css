@@ -27,6 +27,8 @@ main {
     min-width: 320px;
     display: grid;
     justify-content: center;
+    align-items: center;
+    justify-items: center;
     gap: 30px;
     text-align: center;
 }
@@ -36,7 +38,6 @@ header {
     min-width: 288px;
     max-width: 318px;
     min-height: 250px;
-    margin: 0 auto;
     padding: 50px 10px 10px;
     display: flex;
     flex-direction: column;
@@ -54,7 +55,6 @@ header p {
 .rated-container {
     width: 90%;
     min-width: 340px;
-    margin: 0 auto;
     padding: 15px;
     display: grid;
     grid-template-columns: minmax(250px, 500px);
@@ -138,6 +138,7 @@ header p {
     .rated-container {
         grid-area: rated;
         grid-template-columns: 450px;
+        justify-self: end;
     }
     .rated-container__card {
         flex-direction: row;
